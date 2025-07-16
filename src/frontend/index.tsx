@@ -1,24 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import ForgeReconciler, { Text, Box, Badge } from '@forge/react';
 import { invoke } from '@forge/bridge';
-import { TimeData } from './types.type';
+import { TimeTrackingResult } from '../types.type';
+
 
 const App: React.FC = () => {
-  const [data, setData] = useState<string | null>(null);
-  const [timeData, setTimeData] = useState<TimeData | null>(null);
+  const [timeData, setTimeData] = useState<TimeTrackingResult | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   
   useEffect(() => {
-    invoke('getText', { example: 'my-invoke-variable' })
-      .then((result: unknown) => setData(result as string));
-      
-    // Mock time data for now
-    setTimeData({
-      timeRemaining: '2 days left',
-      status: 'yellow'
-    });
+    const fetchTimeData = async () => {
+      try {
+        setLoading(true);
+        const result = await invoke('getTimeTracking') as TimeTrackingResult;
+        setTimeData(result);
+        setError(null);
+      } catch (err) {
+        console.error('[Time Tracker Badge] Error fetching time data:', err);
+        setError('Failed to load time tracking data');
+        setTimeData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTimeData();
   }, []);
   
-  const getBadgeAppearance = (status: TimeData['status']) => {
+  const getBadgeAppearance = (status: TimeTrackingResult['status']) => {
     switch (status) {
       case 'green': return 'success';
       case 'yellow': return 'warning';
@@ -27,21 +37,38 @@ const App: React.FC = () => {
     }
   };
   
+  if (loading) {
+    return (
+      <Box padding="space.200">
+        <Text>Loading time tracking data...</Text>
+      </Box>
+    );
+  }
+
+  if (error) {
+    return (
+      <Box padding="space.200">
+        <Text color="color.text.danger">{error}</Text>
+      </Box>
+    );
+  }
+  
   return (
     <Box padding="space.200">
-      <Text size="large" weight="bold">Time Tracker Badge</Text>
-      
       {timeData && (
-        <Box padding="space.100">
+        <Box>
           <Badge appearance={getBadgeAppearance(timeData.status) as any}>
             {timeData.timeRemaining}
           </Badge>
+          {timeData.dueDate && (
+            <Box padding="space.050">
+              <Text size="small" color="color.text.subtlest">
+                Due: {new Date(timeData.dueDate).toLocaleDateString()}
+              </Text>
+            </Box>
+          )}
         </Box>
       )}
-      
-      <Box padding="space.100">
-        <Text>{data ? data : 'Loading...'}</Text>
-      </Box>
     </Box>
   );
 };

@@ -21,6 +21,7 @@
     "typescript": "^3.9.10"
   },
   "dependencies": {
+    "@forge/api": "^6.0.1",
     "@forge/bridge": "5.2.0",
     "@forge/react": "11.2.5",
     "@forge/resolver": "1.6.14",

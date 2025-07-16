@@ -4,3 +4,9 @@ export type TimeData = {
   timeRemaining: string;
   status: TimeStatus;
 };
+
+export interface TimeTrackingResult {
+  timeRemaining: string;
+  status: TimeStatus;
+  dueDate?: string;
+}
