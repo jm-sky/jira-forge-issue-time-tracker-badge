@@ -14,5 +14,9 @@ if [ -z "$FORGE_EMAIL" ] || [ -z "$FORGE_API_TOKEN" ]; then
     exit 1
 fi
 
-# Login to Forge
-forge login -u "$FORGE_EMAIL" -t "$FORGE_API_TOKEN"
+# Run forge command with environment variables
+export FORGE_USER_EMAIL="$FORGE_EMAIL"
+export FORGE_USER_TOKEN="$FORGE_API_TOKEN"
+
+# Execute the forge command passed as arguments
+exec forge "$@"
