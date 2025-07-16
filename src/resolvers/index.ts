@@ -1,39 +1,10 @@
 import Resolver from '@forge/resolver';
 import api, { route } from '@forge/api';
-import { TimeTrackingResult } from '../types.type';
-
-interface IssueData {
-  id: string;
-  key: string;
-  fields: {
-    duedate?: string;
-    summary: string;
-    status: {
-      name: string;
-      statusCategory: {
-        key: string;
-      };
-    };
-    created: string;
-    updated: string;
-  };
-}
+import { IssueData, TimeTrackingResult } from '../types.type';
 
 const resolver = new Resolver();
 
-function calculateTimeRemaining(dueDate?: string): TimeTrackingResult {
-  if (!dueDate) {
-    return {
-      timeRemaining: 'No due date',
-      status: 'gray'
-    };
-  }
-
-  const now = new Date();
-  const due = new Date(dueDate);
-  const diffTime = due.getTime() - now.getTime();
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
+function getTimeRemaining(diffDays: number, dueDate: string): TimeTrackingResult {
   if (diffDays < 0) {
     return {
       timeRemaining: `${Math.abs(diffDays)} days overdue`,
@@ -67,6 +38,43 @@ function calculateTimeRemaining(dueDate?: string): TimeTrackingResult {
   }
 }
 
+function calculateTimeRemainingFromDueDate(dueDate: string): TimeTrackingResult {
+  const now = new Date();
+  const due = new Date(dueDate);
+  const diffTime = due.getTime() - now.getTime();
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  return getTimeRemaining(diffDays, dueDate);
+}
+
+function calculateTimeRemainingFromOriginalEstimate(originalEstimate: number, created: string): TimeTrackingResult {
+  const now = new Date();
+  const createdDate = new Date(created);
+  const due = new Date(createdDate.getTime() + originalEstimate * 1000);
+  const diffTime = due.getTime() - now.getTime();
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  return getTimeRemaining(diffDays, due.toISOString());
+}
+
+function calculateTimeRemaining(issue: IssueData): TimeTrackingResult {
+  const dueDate = issue.fields.duedate;
+  const originalEstimate = issue.fields.timeoriginalestimate;
+
+  if (!dueDate && !originalEstimate) {
+    return {
+      timeRemaining: 'No due date',
+      status: 'gray'
+    };
+  }
+
+  if (dueDate) {
+    return calculateTimeRemainingFromDueDate(dueDate);
+  }
+
+  return calculateTimeRemainingFromOriginalEstimate(originalEstimate!, issue.fields.created);
+}
+
 resolver.define('getTimeTracking', async (req: any): Promise<TimeTrackingResult> => {
   try {
     const issueKey = req.context.extension.issue.key;
@@ -83,7 +91,7 @@ resolver.define('getTimeTracking', async (req: any): Promise<TimeTrackingResult>
     const issue: IssueData = await response.json();
     console.log('[Time Tracker Badge] Issue data:', issue);
 
-    const result = calculateTimeRemaining(issue.fields.duedate);
+    const result = calculateTimeRemaining(issue);
     console.log('[Time Tracker Badge] Time tracking result:', result);
 
     return result;

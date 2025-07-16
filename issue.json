@@ -1,0 +1,404 @@
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10010.requestTypePractice",
+    "id": "10008",
+    "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/issue/10008",
+    "key": "SJ-2",
+    "fields": {
+        "statuscategorychangedate": "2024-07-26T16:55:55.453+0200",
+        "fixVersions": [],
+        "statusCategory": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+        },
+        "resolution": null,
+        "lastViewed": "2025-07-16T16:20:47.726+0200",
+        "customfield_10062": null,
+        "customfield_10063": null,
+        "customfield_10064": null,
+        "customfield_10065": null,
+        "customfield_10066": null,
+        "customfield_10067": null,
+        "priority": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/priority/3",
+            "iconUrl": "https://sklodowscy-dev.atlassian.net/images/icons/priorities/medium_new.svg",
+            "name": "Medium",
+            "id": "3"
+        },
+        "labels": [],
+        "timeestimate": 0,
+        "aggregatetimeoriginalestimate": 403200,
+        "versions": [],
+        "issuelinks": [],
+        "assignee": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/user?accountId=557058%3A1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+            "accountId": "557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+            "emailAddress": "jan.madeyski@sklodowscy.pl",
+            "avatarUrls": {
+                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/48",
+                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/24",
+                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/16",
+                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/32"
+            },
+            "displayName": "Jan Madeyski",
+            "active": true,
+            "timeZone": "Europe/Warsaw",
+            "accountType": "atlassian"
+        },
+        "status": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/status/3",
+            "description": "This issue is being actively worked on at the moment by the assignee.",
+            "iconUrl": "https://sklodowscy-dev.atlassian.net/images/icons/statuses/inprogress.png",
+            "name": "In Progress",
+            "id": "3",
+            "statusCategory": {
+                "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Progress"
+            }
+        },
+        "components": [],
+        "customfield_10050": null,
+        "customfield_10051": null,
+        "customfield_10052": null,
+        "customfield_10053": [],
+        "customfield_10055": null,
+        "customfield_10056": null,
+        "customfield_10057": null,
+        "customfield_10059": null,
+        "customfield_10049": null,
+        "aggregatetimeestimate": 0,
+        "creator": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/user?accountId=557058%3A1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+            "accountId": "557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+            "emailAddress": "jan.madeyski@sklodowscy.pl",
+            "avatarUrls": {
+                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/48",
+                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/24",
+                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/16",
+                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/32"
+            },
+            "displayName": "Jan Madeyski",
+            "active": true,
+            "timeZone": "Europe/Warsaw",
+            "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "customfield_10040": null,
+        "customfield_10041": null,
+        "customfield_10042": null,
+        "reporter": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/user?accountId=557058%3A1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+            "accountId": "557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+            "emailAddress": "jan.madeyski@sklodowscy.pl",
+            "avatarUrls": {
+                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/48",
+                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/24",
+                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/16",
+                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/32"
+            },
+            "displayName": "Jan Madeyski",
+            "active": true,
+            "timeZone": "Europe/Warsaw",
+            "accountType": "atlassian"
+        },
+        "customfield_10043": null,
+        "aggregateprogress": {
+            "progress": 900,
+            "total": 900,
+            "percent": 100
+        },
+        "customfield_10044": null,
+        "customfield_10045": null,
+        "customfield_10046": null,
+        "customfield_10047": null,
+        "customfield_10048": null,
+        "customfield_10038": null,
+        "customfield_10039": null,
+        "progress": {
+            "progress": 900,
+            "total": 900,
+            "percent": 100
+        },
+        "votes": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/issue/SJ-2/votes",
+            "votes": 0,
+            "hasVoted": false
+        },
+        "worklog": {
+            "startAt": 0,
+            "maxResults": 20,
+            "total": 1,
+            "worklogs": [
+                {
+                    "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/issue/10008/worklog/10014",
+                    "author": {
+                        "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/user?accountId=557058%3A1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+                        "accountId": "557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+                        "emailAddress": "jan.madeyski@sklodowscy.pl",
+                        "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/48",
+                            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/24",
+                            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/16",
+                            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/32"
+                        },
+                        "displayName": "Jan Madeyski",
+                        "active": true,
+                        "timeZone": "Europe/Warsaw",
+                        "accountType": "atlassian"
+                    },
+                    "updateAuthor": {
+                        "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/user?accountId=557058%3A1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+                        "accountId": "557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+                        "emailAddress": "jan.madeyski@sklodowscy.pl",
+                        "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/48",
+                            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/24",
+                            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/16",
+                            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/32"
+                        },
+                        "displayName": "Jan Madeyski",
+                        "active": true,
+                        "timeZone": "Europe/Warsaw",
+                        "accountType": "atlassian"
+                    },
+                    "comment": {
+                        "type": "doc",
+                        "version": 1,
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Test"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "created": "2024-07-26T21:12:45.337+0200",
+                    "updated": "2024-07-26T21:12:45.337+0200",
+                    "started": "2024-07-26T20:57:40.759+0200",
+                    "timeSpent": "15m",
+                    "timeSpentSeconds": 900,
+                    "id": "10014",
+                    "issueId": "10008"
+                }
+            ]
+        },
+        "issuetype": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/issuetype/10009",
+            "id": "10009",
+            "description": "Stories track functionality or features expressed as user goals.",
+            "iconUrl": "https://sklodowscy-dev.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10300?size=medium",
+            "name": "Story",
+            "subtask": false,
+            "avatarId": 10300,
+            "hierarchyLevel": 0
+        },
+        "timespent": 900,
+        "customfield_10030": null,
+        "project": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/project/10004",
+            "id": "10004",
+            "key": "SJ",
+            "name": "sprawy-jira",
+            "projectTypeKey": "software",
+            "simplified": false,
+            "avatarUrls": {
+                "48x48": "https://sklodowscy-dev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10409",
+                "24x24": "https://sklodowscy-dev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10409?size=small",
+                "16x16": "https://sklodowscy-dev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10409?size=xsmall",
+                "32x32": "https://sklodowscy-dev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10409?size=medium"
+            }
+        },
+        "customfield_10033": 5.0,
+        "aggregatetimespent": 900,
+        "customfield_10035": null,
+        "customfield_10036": null,
+        "customfield_10037": null,
+        "customfield_10027": [],
+        "customfield_10028": null,
+        "customfield_10029": null,
+        "resolutiondate": null,
+        "workratio": 0,
+        "watches": {
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/issue/SJ-2/watchers",
+            "watchCount": 1,
+            "isWatching": true
+        },
+        "created": "2024-07-26T16:55:55.004+0200",
+        "customfield_10020": null,
+        "customfield_10021": null,
+        "customfield_10022": null,
+        "customfield_10023": null,
+        "customfield_10024": null,
+        "customfield_10025": null,
+        "customfield_10026": null,
+        "customfield_10016": null,
+        "customfield_10017": null,
+        "customfield_10019": "0|i0001r:",
+        "updated": "2025-07-16T16:18:55.441+0200",
+        "timeoriginalestimate": 403200,
+        "description": {
+            "type": "doc",
+            "version": 1,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "Test JIRA-Sprawy issue integration v2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "customfield_10010": null,
+        "customfield_10014": null,
+        "timetracking": {
+            "originalEstimate": "2w 4d",
+            "remainingEstimate": "0m",
+            "timeSpent": "15m",
+            "originalEstimateSeconds": 403200,
+            "remainingEstimateSeconds": 0,
+            "timeSpentSeconds": 900
+        },
+        "customfield_10015": null,
+        "customfield_10005": null,
+        "customfield_10006": null,
+        "customfield_10007": null,
+        "security": null,
+        "customfield_10008": null,
+        "attachment": [],
+        "customfield_10009": null,
+        "summary": "Test JIRA-Sprawy issue integration v5",
+        "customfield_10001": null,
+        "customfield_10002": [],
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "environment": null,
+        "duedate": null,
+        "comment": {
+            "comments": [
+                {
+                    "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/issue/10008/comment/10003",
+                    "id": "10003",
+                    "author": {
+                        "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/user?accountId=557058%3A1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+                        "accountId": "557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+                        "emailAddress": "jan.madeyski@sklodowscy.pl",
+                        "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/48",
+                            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/24",
+                            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/16",
+                            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/32"
+                        },
+                        "displayName": "Jan Madeyski",
+                        "active": true,
+                        "timeZone": "Europe/Warsaw",
+                        "accountType": "atlassian"
+                    },
+                    "body": {
+                        "type": "doc",
+                        "version": 1,
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "To jest komentarz testowy."
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Druga linijka z "
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "pogrubieniem",
+                                        "marks": [
+                                            {
+                                                "type": "strong"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "."
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bulletList",
+                                "content": [
+                                    {
+                                        "type": "listItem",
+                                        "content": [
+                                            {
+                                                "type": "paragraph",
+                                                "content": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Alfa"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "listItem",
+                                        "content": [
+                                            {
+                                                "type": "paragraph",
+                                                "content": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Beta"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "updateAuthor": {
+                        "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/user?accountId=557058%3A1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+                        "accountId": "557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c",
+                        "emailAddress": "jan.madeyski@sklodowscy.pl",
+                        "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/48",
+                            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/24",
+                            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/16",
+                            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:1240bd82-19f7-44d9-8e1b-0086b0bec68c/cdbbe7f0-bb16-493b-991c-92a907188dc4/32"
+                        },
+                        "displayName": "Jan Madeyski",
+                        "active": true,
+                        "timeZone": "Europe/Warsaw",
+                        "accountType": "atlassian"
+                    },
+                    "created": "2024-07-26T21:35:00.827+0200",
+                    "updated": "2024-07-26T21:35:34.478+0200",
+                    "jsdPublic": true
+                }
+            ],
+            "self": "https://sklodowscy-dev.atlassian.net/rest/api/3/issue/10008/comment",
+            "maxResults": 1,
+            "total": 1,
+            "startAt": 0
+        }
+    }
+}

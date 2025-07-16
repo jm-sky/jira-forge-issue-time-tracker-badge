@@ -40,7 +40,7 @@ const App: React.FC = () => {
   if (loading) {
     return (
       <Box padding="space.200">
-        <Text>Loading time tracking data...</Text>
+        <Text size="small" color="color.text.subtlest">Loading time tracking data...</Text>
       </Box>
     );
   }
