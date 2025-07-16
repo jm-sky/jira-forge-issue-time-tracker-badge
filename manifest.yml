@@ -5,14 +5,14 @@ modules:
       resolver:
         function: resolver
       render: native
-      title: jira-forge-issue-time-tracker-badge
+      title: Time Tracker Badge
       icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
   function:
     - key: resolver
       handler: index.handler
 resources:
   - key: main
-    path: src/frontend/index.jsx
+    path: src/frontend/index.tsx
 app:
   runtime:
     name: nodejs22.x

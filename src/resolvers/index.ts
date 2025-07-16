@@ -2,9 +2,9 @@ import Resolver from '@forge/resolver';
 
 const resolver = new Resolver();
 
-resolver.define('getText', (req) => {
+resolver.define('getText', (req: any): string => {
   console.log(req);
   return 'Hello, world!';
 });
 
-export const handler = resolver.getDefinitions();
+export const handler: any = resolver.getDefinitions();
