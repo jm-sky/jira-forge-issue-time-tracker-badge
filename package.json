@@ -1,11 +1,12 @@
 {
-  "name": "jira-issue-panel-ui-kit",
+  "name": "jira-forge-issue-time-tracker-badge",
   "version": "1.1.15",
   "main": "index.js",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "eslint src/**/*"
+    "lint": "eslint src/**/*",
+    "forge:login": "./scripts/forge-login.sh"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
