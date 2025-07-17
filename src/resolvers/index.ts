@@ -81,7 +81,7 @@ resolver.define('getTimeTracking', async (req: any): Promise<TimeTrackingResult>
     console.log('[Time Tracker Badge] Fetching time tracking data for issue:', issueKey);
 
     const response = await api.asUser().requestJira(
-      route`/rest/api/3/issue/${issueKey}?fields=duedate,summary,status,created,updated`
+      route`/rest/api/3/issue/${issueKey}?fields=duedate,summary,status,timeoriginalestimate,timetracking,created,updated`
     );
 
     if (!response.ok) {
